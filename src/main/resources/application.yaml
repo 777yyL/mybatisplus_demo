@@ -1,0 +1,16 @@
+server:
+  port: 8848
+
+
+#配置数据源
+spring:
+  datasource:
+    username: postgres
+    password: root
+    url: jdbc:postgresql://127.0.0.1:5432/task?autoReconnect=true&useUnicode=true
+    driver-class-name: org.postgresql.Driver
+
+#打印sql日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
